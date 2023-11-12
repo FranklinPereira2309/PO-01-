@@ -1,6 +1,6 @@
 # Declaração de variáveis em C++ e Java
 
-## Agora, em C++, a declaração de variáveis segue uma estrutura semelhante ao Java, mas a diferença principal está na declaração dos tipos e no gerenciamento de memória, uma vez que em C++ o programador tem maior controle sobre a alocação e remoção de memória.
+## Agora, em C++, a declaração de variáveis segue uma estrutura semelhante ao Java, mas a diferença principal está na declaração dos tipos e no gerenciamento de memória, uma vez que em C++ o programador tem maior controle sobre a alocação e liberação de memória.
 
 ## Declaração em C++ e Java são da mesma forma:
 ### int idade; 
