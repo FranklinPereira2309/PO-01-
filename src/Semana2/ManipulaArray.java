@@ -16,10 +16,12 @@ public class ManipulaArray {
 		
 	}
 	void exibirArray(int[] arr) {
+		System.out.println(" ");
 		for(int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i]);
 			System.out.print(" ");
 		}
+		System.out.println(" ");
 		System.out.println(" ");
 	}
 	
@@ -48,7 +50,7 @@ public class ManipulaArray {
         int menor = array[0];
 
         for (int i = 1; i < array.length; i++) {
-            if (array[i] > menor) {
+            if (array[i] < menor) {
                 menor = array[i];
             }
         }
@@ -83,27 +85,53 @@ public class ManipulaArray {
 			System.out.println("10- Sair");
 			System.out.print("Digite sua opção: ");
 			opcao = sc.nextInt();
+				   
 			
 			int tamanho = 0;
 			switch(opcao) {
 			
 			case 1:
-				System.out.println("Digite o tamanho do array: ");
+				System.out.print("Digite o tamanho do array: ");
 				tamanho = sc.nextInt();
 				ma.criarArray(tamanho, sc);
+				System.out.println(" ");
 				break;
 			case 2:
-				System.out.println("Digite o tamnho do array: ");
+				System.out.print("Digite o tamnho do array: ");
 				tamanho = sc.nextInt();
 				ma.gerarArrayAleatorio(tamanho, random);  
+				System.out.println(" ");
 				break;
 			case 3:
 				ma.exibirArray(ma.arr);
 				break;
-			case 0:
+			case 4:
+				int soma = ma.somaArray(ma.arr);
+				System.out.println(" ");
+				System.out.println("A soma do Array foi: " + soma);
+				System.out.println(" ");
+				break;
+			case 5:
+				int maior = ma.maiorValor(ma.arr);
+				System.out.println(" ");
+				System.out.println("O MAIOR valor do Array foi: " + maior);
+				System.out.println(" ");
+				break;
+			case 6:
+				int menor = ma.menorValor(ma.arr);
+				System.out.println(" ");
+				System.out.println("O MENOR valor do Array foi: " + menor);
+				System.out.println(" ");
+				break;
+			case 10:
+				System.out.println(" ");
+				System.out.println("Saindo...");
+				System.out.println(" ");
 				break;
 			default:
-				System.out.println("Opção invárlida!");
+				System.out.println(" ");
+				System.out.println("Opção inválida!");
+				System.out.println(" ");
 			}
 		}while(opcao != 10);
 		
