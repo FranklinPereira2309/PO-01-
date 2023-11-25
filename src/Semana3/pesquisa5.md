@@ -16,3 +16,42 @@ Para criar uma exceção personalizada em Java, você geralmente segue os seguin
            super(mensagem);
        }
    }
+1. Utilizar a Exceção Personalizada no Código:
+
+Em situações específicas do seu código, lance a exceção personalizada quando a condição que
+justifica a exceção ocorrer.
+
+public class ExemploClasse {
+    public void meuMetodo(int valor) throws MinhaExcecaoPersonalizada {
+        if (valor < 0) {
+            throw new MinhaExcecaoPersonalizada("Valor não pode ser negativo");
+        }
+        // Restante do código
+    }
+}
+
+Exemplo de Uso:
+Suponha que você esteja implementando um sistema de gerenciamento de contas bancárias e deseja 
+garantir que o saldo da conta não seja negativo. Nesse caso, você pode criar uma exceção personalizada para lidar 
+com essa situação:
+
+public class SaldoNegativoException extends Exception {
+    public SaldoNegativoException(String mensagem) {
+        super(mensagem);
+    }
+}
+
+public class ContaBancaria {
+    private double saldo;
+
+    public void debitar(double valor) throws SaldoNegativoException {
+        if (saldo - valor < 0) {
+            throw new SaldoNegativoException("Saldo insuficiente para debitar " + valor);
+        }
+        saldo -= valor;
+    }
+}
+
+Ao criar uma exceção personalizada, você fornece informações adicionais sobre a natureza 
+específica do erro, facilitando o tratamento adequado nos blocos catch e fornecendo mensagens 
+mais significativas para a depuração do código.
