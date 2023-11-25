@@ -13,6 +13,7 @@ public class MinhaExcecaoPersonalizada extends Exception {
     }
 }
 
+```
 
 2. Utilizar a Exceção Personalizada no Código:
 Em situações específicas do seu código, lance a exceção personalizada quando a condição que justifica a exceção ocorrer.
@@ -38,6 +39,7 @@ public class ExemploClasse {
     }
 }
 
+```
 Exemplo de Uso:
 Suponha que você esteja implementando um sistema de gerenciamento de contas bancárias e deseja garantir que o saldo da conta não seja negativo. Nesse caso, você pode criar uma exceção personalizada para lidar com essa situação.
 
