@@ -3,6 +3,7 @@
 Em Java, o tratamento de exceções é uma prática fundamental para lidar com situações imprevistas durante a execução de um programa. O tratamento de exceções envolve o uso de palavras-chave específicas e práticas comuns para garantir que o código possa reagir apropriadamente a erros.
 
 
+```java
 try {
     // código que pode lançar uma exceção
 } catch (TipoDeExcecao e) {
@@ -10,6 +11,8 @@ try {
 } finally {
     // código a ser executado sempre, ocorrendo ou não uma exceção
 }
+
+```
 
 4. **throw**: A palavra-chave throw é usada para explicitamente lançar uma exceção em um ponto 
 específico do código.
@@ -19,10 +22,13 @@ throw new TipoDeExcecao("Mensagem de erro");
 5. **throws (na declaração do método)**: A palavra-chave throws é usada na declaração de um método para indicar que o método 
 pode lançar exceções de um determinado tipo.
 
+
+```java
 public void meuMetodo() throws TipoDeExcecao {
     // código do método
 }
 
+```
 #Práticas Comuns:
 
 1. Especificar Exceções Adequadas: Escolha exceções específicas que correspondam ao tipo de erro que está sendo tratado. Isso facilita o entendimento do código e permite tratamentos mais precisos.
