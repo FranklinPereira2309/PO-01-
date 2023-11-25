@@ -13,7 +13,7 @@ Em Java, o tratamento de exceções é uma prática fundamental para lidar com s
        // código para lidar com a exceção
    }
 
-1.**catch**: O bloco catch é usado para capturar e lidar com uma exceção específica. 
+2. **catch**: O bloco catch é usado para capturar e lidar com uma exceção específica. 
 O tipo de exceção que pode ser capturado é especificado entre parênteses.
 
 try {
@@ -22,7 +22,7 @@ try {
     // código para lidar com a exceção
 }
 
-2.**finally (opcional)**: O bloco finally é opcional e é usado para definir código que será executado
+3. **finally (opcional)**: O bloco finally é opcional e é usado para definir código que será executado
 independentemente de ocorrer ou não uma exceção. Este bloco é frequentemente usado para liberar
 recursos, como fechar arquivos ou conexões de banco de dados.
 
@@ -34,12 +34,12 @@ try {
     // código a ser executado sempre, ocorrendo ou não uma exceção
 }
 
-3.**throw**: A palavra-chave throw é usada para explicitamente lançar uma exceção em um ponto 
+4. **throw**: A palavra-chave throw é usada para explicitamente lançar uma exceção em um ponto 
 específico do código.
 
 throw new TipoDeExcecao("Mensagem de erro");
 
-4.**throws (na declaração do método)**: A palavra-chave throws é usada na declaração de um método para indicar que o método 
+5. **throws (na declaração do método)**: A palavra-chave throws é usada na declaração de um método para indicar que o método 
 pode lançar exceções de um determinado tipo.
 
 public void meuMetodo() throws TipoDeExcecao {
@@ -48,14 +48,14 @@ public void meuMetodo() throws TipoDeExcecao {
 
 #Práticas Comuns:
 
-1.Especificar Exceções Adequadas: Escolha exceções específicas que correspondam ao tipo de erro que está sendo tratado. Isso facilita o entendimento do código e permite tratamentos mais precisos.
+1. Especificar Exceções Adequadas: Escolha exceções específicas que correspondam ao tipo de erro que está sendo tratado. Isso facilita o entendimento do código e permite tratamentos mais precisos.
 
-2.Evitar Supressão de Exceções: Evite capturar exceções sem fazer algo significativo com elas. O tratamento vago de exceções pode obscurecer problemas reais.
+2. Evitar Supressão de Exceções: Evite capturar exceções sem fazer algo significativo com elas. O tratamento vago de exceções pode obscurecer problemas reais.
 
-3.Log de Exceções: Registre informações sobre exceções, como mensagens de erro e pilhas de chamadas, para facilitar a depuração.
+3. Log de Exceções: Registre informações sobre exceções, como mensagens de erro e pilhas de chamadas, para facilitar a depuração.
 
-4.Agrupar Exceções: Agrupe exceções semelhantes para aplicar um tratamento comum quando a lógica de tratamento é a mesma para várias exceções.
+4. Agrupar Exceções: Agrupe exceções semelhantes para aplicar um tratamento comum quando a lógica de tratamento é a mesma para várias exceções.
 
-5.Evitar Exceções em Fluxos Normais: Evite o uso de exceções para controlar fluxos normais do programa. Exceções devem ser usadas para situações excepcionais.
+5. Evitar Exceções em Fluxos Normais: Evite o uso de exceções para controlar fluxos normais do programa. Exceções devem ser usadas para situações excepcionais.
 
 Lidando com exceções de maneira eficaz melhora a robustez e a manutenibilidade do código, garantindo que o programa possa se recuperar ou encerrar de maneira controlada em caso de erros.
