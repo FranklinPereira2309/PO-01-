@@ -1,3 +1,5 @@
+Em Java, o bloco `try-catch` é uma estrutura usada para lidar com exceções durante a execução de um programa. Ele permite que você envolva um bloco de código suscetível a lançar exceções dentro de um bloco `try` e forneça um bloco `catch` para capturar e lidar com essas exceções.
+
 A estrutura básica para lidar com exceções em Java envolve três blocos principais:
 
 1. **Bloco Try:** Contém o código que pode lançar uma exceção. Se ocorrer uma exceção, o controle é transferido para o bloco catch correspondente.
