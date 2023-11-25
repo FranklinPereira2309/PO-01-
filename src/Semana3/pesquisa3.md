@@ -2,29 +2,6 @@
 
 Em Java, o tratamento de exceções é uma prática fundamental para lidar com situações imprevistas durante a execução de um programa. O tratamento de exceções envolve o uso de palavras-chave específicas e práticas comuns para garantir que o código possa reagir apropriadamente a erros.
 
-## Palavras-chave Principais:
-
-1. **try:** O bloco `try` é utilizado para envolver o código suscetível a lançar exceções. Se uma exceção ocorrer dentro do bloco try, o controle é transferido para o bloco catch correspondente.
-
-   ```java
-   try {
-       // código que pode lançar uma exceção
-   } catch (TipoDeExcecao e) {
-       // código para lidar com a exceção
-   }
-
-2. **catch**: O bloco catch é usado para capturar e lidar com uma exceção específica. 
-O tipo de exceção que pode ser capturado é especificado entre parênteses.
-
-try {
-    // código que pode lançar uma exceção
-} catch (TipoDeExcecao e) {
-    // código para lidar com a exceção
-}
-
-3. **finally (opcional)**: O bloco finally é opcional e é usado para definir código que será executado
-independentemente de ocorrer ou não uma exceção. Este bloco é frequentemente usado para liberar
-recursos, como fechar arquivos ou conexões de banco de dados.
 
 try {
     // código que pode lançar uma exceção
