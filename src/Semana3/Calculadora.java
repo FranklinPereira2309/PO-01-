@@ -111,6 +111,9 @@ public class Calculadora {
 					throw new IllegalArgumentException("Unexpected value: " + opcao);
 				}
 				}while(opcao != 5);
+			
+			sc.close();
+			
 		
 	}
 }
